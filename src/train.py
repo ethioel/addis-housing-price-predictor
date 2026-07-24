@@ -414,7 +414,8 @@ class ModelTrainer:
                 "features": self.X_train.shape[1],
             },
         }
-        save_json(report, f"{output_dir}/evaluation_report_{timestamp}.json")
+        filename = os.path.join(output_dir, f"evaluation_report_{timestamp}.json")
+save_json(report, filename)
 
         print(f"\nResults saved to: {output_dir}/")
 
