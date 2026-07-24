@@ -3,7 +3,6 @@ Model Training Pipeline for Addis Ababa Housing Price Predictor
 """
 
 import os
-import json
 import warnings
 from datetime import datetime
 from typing import Dict, List, Optional, Tuple, Any
@@ -238,7 +237,7 @@ class ModelTrainer:
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
             X, y, test_size=test_size, random_state=42
         )
-        print(f"\n📊 Data Split:")
+        print("\n📊 Data Split:")
         print(f"  - Training: {len(self.X_train):,} samples")
         print(f"  - Testing:  {len(self.X_test):,} samples")
 
