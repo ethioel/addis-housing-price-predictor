@@ -4,7 +4,6 @@ Model Training Pipeline for Addis Ababa Housing Price Predictor
 
 import os
 import warnings
-from datetime import datetime
 from typing import Dict, List, Optional, Tuple, Any
 
 import numpy as np
@@ -440,7 +439,7 @@ class ModelVisualizer:
         # R² plot
         ax = axes[0]
         colors = ["green" if i == 0 else "skyblue" for i in range(len(models))]
-        bars = ax.bar(models, r2_scores, color=colors)
+        _bars = ax.bar(models, r2_scores, color=colors)
         ax.set_title("R² Score", fontsize=12)
         ax.set_ylabel("R²")
         ax.set_ylim(0, 1)
@@ -448,14 +447,14 @@ class ModelVisualizer:
 
         # RMSE plot
         ax = axes[1]
-        bars = ax.bar(models, rmse_scores, color=colors)
+        _bars = ax.bar(models, rmse_scores, color=colors)
         ax.set_title("RMSE (ETB)", fontsize=12)
         ax.set_ylabel("RMSE")
         ax.tick_params(axis="x", rotation=45)
 
         # MAE plot
         ax = axes[2]
-        bars = ax.bar(models, mae_scores, color=colors)
+        _bars = ax.bar(models, mae_scores, color=colors)
         ax.set_title("MAE (ETB)", fontsize=12)
         ax.set_ylabel("MAE")
         ax.tick_params(axis="x", rotation=45)
