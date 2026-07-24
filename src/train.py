@@ -415,7 +415,7 @@ class ModelTrainer:
             },
         }
         filename = os.path.join(output_dir, f"evaluation_report_{timestamp}.json")
-save_json(report, filename)
+        save_json(report, filename)
 
         print(f"\nResults saved to: {output_dir}/")
 
