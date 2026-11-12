@@ -79,7 +79,6 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 | **Author** | Samuel Kahsay |
 | **Email** | samkahsay.dev@gmail.com |
 | **GitHub** | [@ethioel](https://github.com/ethioel) |
-| **X/Twitter** | [@ethioel](https://X.com/ethioel) |
 | **Project Link** | [github.com/ethioel/addis-housing-price-predictor](https://github.com/ethioel/addis-housing-price-predictor) |
 
 **Support**
